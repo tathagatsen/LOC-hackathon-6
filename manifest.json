@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Finall",
+  "version": "1.0",
+  "description": "Highlights links on web pages for better visibility",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
